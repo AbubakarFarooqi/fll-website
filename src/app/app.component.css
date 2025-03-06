@@ -1,0 +1,25 @@
+/* .main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+
+
+.main {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Creates three rows: auto for navbar, 1fr for content, auto for footer */
+    height: 100%; /* Ensures the page takes at least the full height of the viewport */
+  }
+.router-outlet{
+    /* flex:1; */
+}
+app-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+app-footer{
+     position: sticky; 
+    bottom: 0;
+}

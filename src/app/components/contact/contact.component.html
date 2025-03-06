@@ -1,0 +1,21 @@
+<section class="contact">
+  <h1>Contact Us</h1>
+  <p>Have any questions? Feel free to reach out to us!</p>
+  <form (submit)="onSubmit()">
+    <input type="text" placeholder="Your Name" name="name" required />
+    <input type="email" placeholder="Your Email" name="email" required />
+    <textarea placeholder="Your Message" name="message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-links">
+    <a href="https://web.facebook.com/FLLteams/?_rdc=1&_rdr#" target="_blank" class="social-icon">Facebook</a>
+     
+    <a href="https://www.instagram.com/first_legoleague/?hl=en" class="social-icon" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/company/first_2/" class="social-icon" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- 
+  [(ngModel)]="contact.name"
+[(ngModel)]="contact.email"
+[(ngModel)]="contact.message" -->

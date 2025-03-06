@@ -1,0 +1,53 @@
+<!-- <div class="body">
+  <h1>Our Members</h1>
+  <div class="members">
+    @for (item of teamMembers; track $index) {
+    <div class="member-box">
+      <div
+        class="bg-overlay"
+        [ngStyle]="{
+          'background-image': 'url(' + item.img + ')'
+        }"
+      ></div>
+      
+      <h2 class="main-head">{{ item.Name }}</h2>
+      <span
+        ><strong class="sub-head"><b>Role: </b></strong>{{ item.Role }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Age: </b></strong>{{ item.Age }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Skills: </b></strong
+        >{{ item.Skills }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Hobbies: </b></strong
+        >{{ item.Hobbies }}</span
+      >
+    </div>
+    }
+  </div>
+  
+</div> -->
+
+<section class="body">
+  <h1>Our Members</h1>
+  <div class="members">
+    <div *ngFor="let item of teamMembers; let i = index" class="member-box">
+      <div
+        class="bg-overlay"
+        [ngStyle]="{ 'background-image': 'url(' + item.img + ')' }"
+      ></div>
+      <h2 class="main-head">{{ item.Name }}</h2>
+      <span
+        ><strong class="sub-head"><b>Age: </b></strong>{{ item.Age }}</span
+      >
+      
+      <span
+        ><strong class="sub-head"><b>Hobbies: </b></strong
+        >{{ item.Hobbies }}</span
+      >
+    </div>
+  </div>
+</section>
