@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/fll-website",
+            "outputPath": "dist/",
             "baseHref":"/fll-website/",
             "index": "src/index.html",
             "browser": "src/main.ts",
